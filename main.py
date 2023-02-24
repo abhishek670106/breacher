@@ -59,12 +59,12 @@ def handle_message(msg):
       print(string)
       inp = string
       # print(inp)
-      url = "https://breachdirectory.p.rapidapi.com/"
+      url = "https://redacted.p.rapidapi.com/"
       querystring = {"func": "auto", "term": "someone@example.com"}
       querystring.update({"term": inp})
       headers = {
         "X-RapidAPI-Key": "c59dddda75mshc7a4cae73fca17ap1e5cc8jsn2fd0dcb9bc7f",
-        "X-RapidAPI-Host": "breachdirectory.p.rapidapi.com"
+        "X-RapidAPI-Host": "redacted.p.rapidapi.com"
       }
       response = requests.request("GET", url, headers=headers, params=querystring)
       dataa = response.text
